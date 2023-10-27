@@ -2,22 +2,22 @@ import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, SpotLight, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
-// import { HemisphereLight, PointLight } from "three";
+import { HemisphereLight, PointLight } from "three";
 
 const Computers = () => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
-      <spotLight
+      <pointLight intensity={1} />
+      <SpotLight
         position={[-20, 50, 10]}
-        angle={0.5}
+        angle={0.12}
         penumbra={1}
         intensity={1}
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={1} />
       <SpotLight position={[-20, 50, 10]} />
       <primitive
         object={computer.scene}
