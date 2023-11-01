@@ -1,4 +1,5 @@
 import React from "react";
+import { SectionWrapper } from "./hoc";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -52,4 +53,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, "about");
