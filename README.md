@@ -1,7 +1,3 @@
-# React + Vite
-
-this project is licenced by mit and abide by the terms of mit for opensource projects.
-
 MIT License
 
 Copyright (c) [year] [fullname]
