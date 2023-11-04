@@ -1,7 +1,7 @@
 <img width="146" alt="logo" src="https://github.com/misikir21/Weather/assets/41914268/d0739f6f-2e87-49bf-aaf1-517c0bc35b53">
 
-# Restaurant App
-This is a website for food lovers or anyone who is interested in checking out the dish offered. This web application is for individual, commercial and scientific  uses. The application will allow users to view available dishes and book a table. This application is built with JavaScript, HTML, CSS and React More here.
+# 3D Potofilo Project
+this is a 3d developer protofilo project it makes use framer library which is a popular library for building 3d projects.
 
 # 📗 Table of Contents
 
@@ -35,6 +35,7 @@ This is a website for food lovers or anyone who is interested in checking out th
 - CSS
 - JavaScript
 - React-js
+- Framer 
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -54,8 +55,8 @@ This is a website for food lovers or anyone who is interested in checking out th
 
 ### Key Features <a name="key-features"></a>
 
-- The project is a single-page application (SPA) built with React and Redux 📃
-- When the page loads, the web app shows the list of dish 🔃
+- The project is a single-page application (SPA) built with React📃
+- When the page loads, the web app shows the a developer portofilo 🔃
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -124,7 +125,6 @@ If you have any inquiries, suggestions, or feedback, please feel free to contact
 
 - [ ] A complete website with navigation
 - [ ] Add more styles to make it more awesome
-- [ ] Featch dish data from API 
 
 ## 🤝 Contributing <a name="contributing"></a>
 
