@@ -5,7 +5,16 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+}) => {
+  return <motion.div>test</motion.div>;
+};
 const Works = () => {
   return (
     <>
@@ -25,10 +34,9 @@ const Works = () => {
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project ,index)=(
-          <ProjectCard/>
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
-
       </div>
     </>
   );
