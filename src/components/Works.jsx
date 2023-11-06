@@ -72,7 +72,6 @@ const Works = () => {
         >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
           debitis nisi sed, autem laborum ipsam, enim excepturi , neque possimus
-          provident deleniti laudantium quo ratione iure. Ad quisquam possimus
           unde in, sit illo eaque dolores quos!
         </motion.p>
       </div>
