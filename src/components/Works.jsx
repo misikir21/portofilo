@@ -43,6 +43,10 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
+        <div className="mt-5">
+          <h3>{name}</h3>
+          <p>{description}</p>
+        </div>
       </Tilt>
     </motion.div>
   );
