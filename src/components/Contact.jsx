@@ -7,6 +7,11 @@ import { earthcanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 const Contact = () => {
+  const [form.setform]=useState({
+    name:'',
+    email:'',
+    message:'',
+  })
   return <div>Contact</div>;
 };
 
