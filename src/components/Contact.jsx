@@ -13,6 +13,8 @@ const Contact = () => {
     message:'',
   })
 const [load, setload] = useState(false)
+const handleChange=(e)=>{}
+const handleSubmit=(e)=>{}
   return <div>Contact</div>;
 };
 
