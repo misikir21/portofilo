@@ -42,26 +42,26 @@ const Contact = () => {
           </label>
 
           <label className="flex flex-col">
-            <span className="text-white font-medium mv-4">Your Name </span>
+            <span className="text-white font-medium mv-4">Your Email </span>
             <input
               type="text"
-              name="name"
-              value={form.name}
+              name="email"
+              value={form.email}
               onChange={handleChange}
-              placeholder="what is your name"
+              placeholder="what is your email"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary
             text-white rounded-lg outline-none border-none font-medium "
             />
           </label>
 
           <label className="flex flex-col">
-            <span className="text-white font-medium mv-4">Your Name </span>
+            <span className="text-white font-medium mv-4">Your Message</span>
             <input
               type="text"
-              name="name"
-              value={form.name}
+              name="message"
+              value={form.message}
               onChange={handleChange}
-              placeholder="what is your name"
+              placeholder="what is your message"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary
             text-white rounded-lg outline-none border-none font-medium "
             />
