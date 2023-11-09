@@ -6,7 +6,9 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-
+//template_v4819rq
+//gmail service_7z1jw7s
+//pk N2BzniXLT6c2VKZP3
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -18,8 +20,8 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
+    const { value, name } = e.target;
+    setForm({ ...form, [name]: value });
 
     setForm({
       ...form,
@@ -30,7 +32,16 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-
+    emailjs.send("service_7z1jw7s", "template_v4819rq",
+    {
+    from_name:form.name,
+    to_name:'misikir',
+    from_email:form.email,
+    to_email:'misikir@gmail.com',
+    message:form.message, 
+  }
+    )
+}
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
