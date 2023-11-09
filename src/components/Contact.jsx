@@ -18,8 +18,8 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { value, name } = e.target;
-    setForm({ ...form, [name]: value });
+    const { target } = e;
+    const { name, value } = target;
 
     setForm({
       ...form,
@@ -30,29 +30,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    emailjs.send("service_7z1jw7s", "template_v4819rq",
-    {
-    from_name:form.name,
-    to_name:'misikir',
-    from_email:form.email,
-    to_email:'misikir@gmail.com',
-    message:form.message, 
-  },
-  ' N2BzniXLT6c2VKZP3'
-    ).then(()=>{
-      setLoading(false)
-      alert('thank you for reaching me out i will contact you as soon as posible')
-      setForm({
-        name:'',
-        email:'',
-        message:''
-      })
-    },(error)=>{
-      setLoading(false)
-      console.log(error)
-      alert('something went wrong')
-    })
-}
+
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
