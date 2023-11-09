@@ -56,7 +56,7 @@ const Contact = () => {
 
           <label className="flex flex-col">
             <span className="text-white font-medium mv-4">Your Message</span>
-            <input
+            <textarea
               type="text"
               name="message"
               value={form.message}
@@ -66,6 +66,10 @@ const Contact = () => {
             text-white rounded-lg outline-none border-none font-medium "
             />
           </label>
+          <button
+            type="submit"
+            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+          />
         </form>
       </motion.div>
     </div>
