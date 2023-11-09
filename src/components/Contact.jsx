@@ -47,6 +47,10 @@ const Contact = () => {
         email:'',
         message:''
       })
+    },(error)=>{
+      setLoading(false)
+      console.log(error)
+      alert('something went wrong')
     })
 }
     emailjs
