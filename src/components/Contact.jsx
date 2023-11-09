@@ -6,9 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-//template_v4819rq
-//gmail service_7z1jw7s
-//pk N2BzniXLT6c2VKZP3
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -39,7 +37,8 @@ const Contact = () => {
     from_email:form.email,
     to_email:'misikir@gmail.com',
     message:form.message, 
-  }
+  },
+  ' N2BzniXLT6c2VKZP3'
     )
 }
     emailjs
