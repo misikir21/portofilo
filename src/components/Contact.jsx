@@ -39,7 +39,15 @@ const Contact = () => {
     message:form.message, 
   },
   ' N2BzniXLT6c2VKZP3'
-    )
+    ).then(()=>{
+      setLoading(false)
+      alert('thank you for reaching me out i will contact you as soon as posible')
+      setForm({
+        name:'',
+        email:'',
+        message:''
+      })
+    })
 }
     emailjs
       .send(
